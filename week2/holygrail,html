@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Jaryne Moraleda Manrique | Holy Grail Layout Example</title>
+        <meta name="description" content="A common layout on the web called 'holy grail'">
+    </head>
+    <body>
+        <header>
+            <h1>A Holy Grail Layout Example</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="https://artsandculture.google.com/asset/almond-blossom/dAFXSL9sZ1ulDw?hl=en&avm=2">Almond Blossoms</a></li>
+                <li><a href="https://open.spotify.com/track/6P2769Z4TC9TT1XL2yGzfh?si=0ffeccb14ccf46a4">Fly Love</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Heading</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, perspiciatis!</p>
+            </section>
+            <section>
+                <h2>Heading</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, maiores.</p>
+            </section>
+        </main>
+        <aside>
+            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/calgary-alberta/800x500/calgary-alberta-temple-before-open-house-1033408-wallpaper.jpg" alt="Calgary Alberta Temple" width="=200">
+        </aside>
+        <footer>
+            ✨Jaryne Moraleda Manrique
+        </footer>
+    </body>
+</html>
