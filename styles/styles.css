@@ -1,7 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: steelblue;
     --secondary-color: white;
-    --border-size: 1px; /*this seems unnecessary, but for the sake of the activity.*/
+    --border-size: 1px; /*this seems unnecessary, but for the sake of the activity, I will add.*/
 }
 
 main {
@@ -21,9 +27,11 @@ nav a {
 
 h1 {
     color: var(--primary-color);
+    height: 45px;
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: var(--border-size) solid var(--primary-color);
@@ -37,12 +45,14 @@ p {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: var(--border-size) solid rgba(0, 0, 0, 0.2); /* comment :o */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 115px;
 }
 
 aside img {
@@ -54,4 +64,14 @@ footer {
     margin-top: 1em;
     border-top: var(--border-size) solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box{
+    margin: 1rem;
+    border: var(--border-size) solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #ef9195ad;
+    color: #000;
 }
