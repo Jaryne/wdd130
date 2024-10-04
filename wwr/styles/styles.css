@@ -11,5 +11,5 @@ h2 {
 }
 
 p, li {
-    font-family: 'Montserrat' sans-serif; /*saw this in stackoverflow*/
+    font-family: 'Montserrat', sans-serif; /*saw this in stackoverflow*/
 }
