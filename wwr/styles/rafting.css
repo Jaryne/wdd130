@@ -2,7 +2,6 @@
     --primary-color: #535353; 
     --secondary-color: #D5CE92; 
     --accent1-color: #FFEA84; 
-    --accent2-color: #F9A037; 
     --background-color: #F8F9FA; 
     --text-color: #333333; 
     --link-color: #535353; 
@@ -40,7 +39,6 @@ nav a:hover {
 .hero {
     position: relative;
     height: 400px;
-    overflow: hidden; 
 }
 
 .hero img {
