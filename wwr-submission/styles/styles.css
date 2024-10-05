@@ -1,0 +1,15 @@
+body {
+    font-family: 'Montserrat', sans-serif; /*this is for body text*/
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive; /*this is heading*/
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif; /*subheading*/
+}
+
+p, li {
+    font-family: 'Montserrat', sans-serif; /*saw this in stackoverflow*/
+}
