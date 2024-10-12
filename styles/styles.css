@@ -7,27 +7,53 @@
 :root {
     --primary-color: steelblue;
     --secondary-color: white;
-    --border-size: 1px; /*this seems unnecessary, but for the sake of the activity, I will add.*/
+    --border-size: 1px; /* this seems unnecessary, but for the sake of the activity, I will add.*/
+    --hover-link-color: #ef9195ad;
 }
 
-main {
-    max-width: 840px;
+header, footer, .grid {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 nav {
     background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    justify-content: center; /*change to center to keep links in the middle */
+    gap: 20px; /* gap for spacing */
 }
 
 nav a {
     color: var(--secondary-color);
     display: block;
-    padding: 20px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+nav a:hover {
+    color: var(--hover-link-color);
+}
+
+/* class sector  */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start; /* aligns items to the top */
+    gap: 1rem; /* space between the columns */
+}
+
+main {
+    grid-column: 2; /* Second column */
+    padding: 1rem;
+    min-height: 300px; /* Adjust this height as needed */
 }
 
 h1 {
     color: var(--primary-color);
-    height: 45px;
+    border-bottom: var(--border-size) solid var(--primary-color);
+    padding-bottom: 10px; /* Optional: adds space between text and border */
 }
 
 main img {
@@ -44,9 +70,12 @@ p {
 }
 
 aside {
+    grid-column: 1; /* First column */
+    padding: 1rem;
+    min-height: 100px; /* Adjust this height as needed */
     width: 20rem;
     text-align: center;
-    position: relative;
+    position: relative; 
 }
 
 aside h2 {
@@ -69,6 +98,8 @@ footer {
 /* Class Selectors */
 
 .box{
+    display: grid;
+    grid-template-columns: auto;
     margin: 1rem;
     border: var(--border-size) solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
