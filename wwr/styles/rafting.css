@@ -18,33 +18,42 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid; /* switched to grid because the module said so */
+    grid-template-columns: auto 1fr; /* Logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* add padding */
 }
 
 header img {
-    max-width: 150px; 
+    max-width: 125px; 
+}
+
+nav {
+    display: flex; /* flexbox for horizontal navigation */
 }
 
 nav a {
-    text-decoration: none; /* Remove underline */
-    margin: 0 10px; 
+    text-decoration: none; /* remove underline */
+    margin: 0 10px; /* spacing between links */
     color: var(--link-color);
 }
 
 nav a:hover {
-    color: var(--hover-link-color);
+    color: var(--hover-link-color); /* link hover color */
+}
+
+main {
+    background-color: var(--secondary-color);
 }
 
 .hero {
     position: relative;
-    height: 400px;
+    height: 400px; /* Fixed height for hero section */
 }
 
 .hero img {
     width: 100%;
-    height: 100%; /* I changed the auto to 100% because the text wont fit. I may change the image in the future. */
+    height: 100%; /* I changed the auto to 100% because the text won't fit. I may change the image in the future. */
     object-fit: cover;
 }
 
@@ -52,58 +61,77 @@ nav a:hover {
     position: absolute;
     top: 50%;
     left: 5%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* Center vertically */
     color: var(--accent1-color);
     font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 5%;
-    background-color: rgba(255, 255, 255, 0.281);
+    background-color: rgba(255, 255, 255, 0.497); /* semi-transparent background */
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 5px; /* rounded corners */
 }
 
 .hero article img {
-    float: right;
+    float: right; /* floats image to the right */
     width: 150px;
-    margin-left: 15px;
+    margin-left: 15px; /* space between */
 }
 
 section {
-    margin: 20px 0; 
+    margin: 20px 0; /* section spacing */
+}
+
+section p {
+    text-align: center;
 }
 
 h2 {
     color: var(--primary-color);
+    text-align: center; /* centered headings */
+}
+
+.gallery {
+    display: flex; /* flexbox for gallery layout */
+    justify-content: space-between; /* even spacing between images */
+    align-items: center; /* vertical alignment */
+}
+
+.gallery img {
+    max-width: calc(20% - 10px); /* each image takes up to 20% of the row with space for gaps */
+    height: auto; /* maintain aspect ratio */
+    margin: 0 5px; /* margin on the sides for more spacing */
 }
 
 footer {
-    padding: 20px;
+    padding: 20px; /* footer padding */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: column; /* vertical layout */
+    margin-top: 20px; /* space above footer */
 }
 
 footer p {
-    margin: 0;
+    margin: 0; /* no margin for paragraphs */
+    align-self: center; /* center paragraph */
 }
 
 .sociallinks {
-    display: flex; /* Added to maintain a flex layout for links */
-    justify-content: center; /* Center social links */
+    display: flex; /*maintain a flex layout for links */
+    justify-content: flex-end; /* align links to the right */
 }
 
 .sociallinks a {
-    text-decoration: none; /* Remove underlines */
-    margin: 0 10px; /* Adjust margin for consistent spacing */
+    text-decoration: none; /* remove underlines */
+    margin: 0 5px; /* margin for consistent spacing */
+    margin-top: -20px; /* vertical alignment */
+    margin-left: 20px;
 }
 
 .sociallinks img {
-    width: 24px; /* figure out how to put these on the right */
-    height: auto; 
+    width: 24px; /* Size of social media icons */
+    height: auto; /* Maintain aspect ratio */
 }
