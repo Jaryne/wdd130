@@ -44,50 +44,13 @@ nav a:hover {
 
 main {
     background-color: var(--secondary-color);
-}
-
-.hero {
-    position: relative;
-    height: 400px; /* Fixed height for hero section */
-}
-
-.hero img {
-    width: 100%;
-    height: 100%; /* I changed the auto to 100% because the text won't fit. I may change the image in the future. */
-    object-fit: cover;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%); /* Center vertically */
-    color: var(--accent1-color);
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 5%;
-    background-color: rgba(255, 255, 255, 0.497); /* semi-transparent background */
-    padding: 15px;
-    border-radius: 5px; /* rounded corners */
-}
-
-.hero article img {
-    float: right; /* floats image to the right */
-    width: 150px;
-    margin-left: 15px; /* space between */
+    padding: 20px; /* padding for main section */
 }
 
 section {
-    margin: 20px 0; /* section spacing */
-}
-
-section p {
     text-align: center;
+    margin: 20px 0; /* section spacing */
+    max-width: 1120;
 }
 
 h2 {
@@ -95,16 +58,74 @@ h2 {
     text-align: center; /* centered headings */
 }
 
-.gallery {
-    display: flex; /* flexbox for gallery layout */
-    justify-content: space-between; /* even spacing between images */
-    align-items: center; /* vertical alignment */
+.responsive-iframe {
+    width: 100%; /* Full width of the container */
+    height: 450px;
+    border: none; /* remove default border! */
 }
 
-.gallery img {
-    max-width: calc(20% - 10px); /* each image takes up to 20% of the row with space for gaps */
-    height: auto; /* maintain aspect ratio */
-    margin: 0 5px; /* margin on the sides for more spacing */
+.employee-profiles {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* evenly distribute profiles */
+    margin: 20px 0; /* margin around the employee section */
+    overflow: hidden; /* make sure don't overflow */
+}
+
+.employee {
+    text-align: center; /* center-align text under images */
+    margin: 10px; /* space between employee cards */
+    width: 250px; /* setfixed width for employee cards */
+}
+
+.employee img {
+    max-width: 100%; /* responsive images */
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* full width of the container */
+    max-width: 600px; /* set a maximum width */
+    margin: 0 auto; /* center the form */
+}
+
+form label {
+    margin-top: 10px; /* space above labels */
+    margin-bottom: 5px; /* space below labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* full width of the container */
+    max-width: 700px; /* max width for inputs */
+    padding: 10px; /* padding */
+    margin-bottom: 15px; /* space below inputs */
+    border: 1px solid #ccc; /* border for inputs */
+    border-radius: 5px; /* rounded corners */
+    box-sizing: border-box;
+}
+
+
+button.submit-button {
+    background-color: var(--primary-color); /* button color */
+    color: white;
+    border: none; /* no border */
+    padding: 10px 20px; /* padding for button */
+    border-radius: 5px; /* rounded corners */
+    cursor: pointer;
+    margin-top: 10px; /* gap above button */
+}
+
+button.submit-button:hover {
+    background-color: var(--hover-link-color);
 }
 
 footer {
@@ -112,26 +133,26 @@ footer {
     display: flex;
     flex-direction: column; /* vertical layout */
     margin-top: 20px; /* space above footer */
+    background-color: var(--background-color); /* background color */
 }
 
 footer p {
     margin: 0; /* no margin for paragraphs */
     align-self: center; /* center paragraph */
 }
-
+ 
 .sociallinks {
-    display: flex; /*maintain a flex layout for links */
-    justify-content: flex-end; /* align links to the right */
+    display: flex; /* maintain a flex layout for links */
+    justify-content: center; /* center social links */
+    margin: 10px 0; /* margin around social links */
 }
 
 .sociallinks a {
     text-decoration: none; /* remove underlines */
-    margin: 0 5px; /* margin for consistent spacing */
-    margin-top: -20px; /* vertical alignment */
-    margin-left: 20px;
+    margin: 0 10px; /* margin for consistent spacing */
 }
 
 .sociallinks img {
-    width: 24px; /* Size of social media icons */
-    height: auto; /* Maintain aspect ratio */
+    width: 24px; /* social media icons size */
+    height: auto; /* maintain aspect ratio */
 }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <meta name="description" content="Don't just float by—give us a shout and let's make some waves together!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo4_200.png" alt="Whitewater Rafting Logo"> <!--will edit later to match background color-->
+        <nav>
+            <a href="index.html">INDEX</a>
+            <a href="about.html">ABOUT</a>
+            <a href="trips.html">TRIPS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>CONTACT US</h2>
+            <p>Inquiries? Booking? Reach out to us!</p>
+            <p>Address: 221b Baker Street</p>
+            <p>Phone: (098) 765-4321</p>
+            <p>Email: wwr@whitewaterrafting.com</p>
+            <iframe class="responsive-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1931.0349672860848!2d-120.90230069865765!3d38.80754270411548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809affd44a7f67d5%3A0x2a07185c964e4741!2sOARS%20American%20River%20Outpost!5e1!3m2!1sen!2sph!4v1729373404207!5m2!1sen!2sph" width="1150" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </section>
+
+        <section>
+            <h2>Meet Our Team</h2>
+            <div class="employee-profiles">
+                <div class="employee">
+                    <img src="images/pexels-photo-7988793.jpg" alt="Happy Employee 1" />
+                    <p>Grice Paterson - Rafting Guide</p>
+                </div>
+                <div class="employee">
+                    <img src="images/pexels-photo-6205635.jpg" alt="Happy Employee 2" />
+                    <p>Sophy Anderson - Adventure Coordinator</p>
+                </div>
+                <div class="employee">
+                    <img src="images/pexels-photo-9301866.jpg" alt="Happy Employee 3" />
+                    <p>Clark Russell - Safety Officer</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="General Inquiry" required>
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Reservation Question">
+                        Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Website Suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <label>
+                    <input type="checkbox" name="subscribe" value="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>©2024 | Whitewater Rafting | Jaryne Moraleda Manrique</p>
+        <nav class="sociallinks">
+            <!-- might be the errors, will try changing to images next -->
+            <a href="https://www.facebook.com/">
+                <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Facebook_2_glyph_svg-512.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-512.png" alt="Twitter">            
+            </a>
+        </nav>
+        <p><a href="https://wireframe.cc/qSUSSa">Contact Us Wireframe</a></p>
+    </footer>
+</body>
+</html>
