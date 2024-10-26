@@ -3,9 +3,19 @@
     --secondary-color: #D5CE92; 
     --accent1-color: #FFEA84; 
     --background-color: #F8F9FA; 
-    --text-color: #333333; 
+    --text-color: #333333;
+    --text-color-2: #fff; 
     --link-color: #535353; 
     --hover-link-color: #F9A037; /* Hover effect for links */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
 }
 
 .hero {
@@ -34,7 +44,7 @@
     position: absolute;
     bottom: 20px;
     left: 5%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.53);
     padding: 15px;
     border-radius: 5px;
 }
@@ -43,15 +53,6 @@
     float: right;
     width: 150px;
     margin-left: 15px;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif; 
-    background-color: var(--background-color);
-    color: var(--text-color);
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px;
 }
 
 header {
@@ -100,7 +101,7 @@ h3[aria-hidden="true"] {
 
 .gallery {
     display: flex;
-    flex-direction: row; /* Adventure Awaits You picures lined up as row */
+    flex-direction: row; /* Adventure Awaits You pictures lined up as row */
 }
 
 .gallery img {
@@ -125,7 +126,7 @@ h3[aria-hidden="true"] {
 .employee {
     text-align: center; /* center-align text under images */
     margin: 10px; /* space between employee cards */
-    width: 250px; /* setfixed width for employee cards */
+    width: 250px; /* set fixed width for employee cards */
 }
 
 .employee img {
@@ -149,13 +150,13 @@ form {
 }
 
 form label {
-    margin-top: 10px; /* space above labels */
-    margin-bottom: 5px; /* space below labels */
+    margin: 10px 0 5px; /* space above and below labels */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
+    resize: none;
     width: 100%; /* full width of the container */
     max-width: 700px; /* max width for inputs */
     padding: 10px; /* padding */
@@ -183,7 +184,7 @@ textarea {
 }
 
 .grid-item {
-    border: 1px solid #ccc;
+    border: none;
     padding: 1em;
     text-align: center;
 }
@@ -195,7 +196,7 @@ textarea {
 
 button.submit-button {
     background-color: var(--primary-color); /* button color */
-    color: white;
+    color: var(--text-color-2);
     border: none; /* no border */
     padding: 10px 20px; /* padding for button */
     border-radius: 5px; /* rounded corners */
@@ -211,19 +212,20 @@ footer {
     padding: 20px; /* footer padding */
     display: flex;
     flex-direction: column; /* vertical layout */
-    color: white;
     background-color: var(--primary-color); /* background color */
+    margin-bottom: -30px;
 }
 
 footer p {
     margin: 0; /* no margin for paragraphs */
     align-self: center; /* center paragraph */
+    color: var(--text-color-2 );
 }
- 
+
 .sociallinks {
     display: flex; /* maintain a flex layout for links */
     justify-content: center; /* center social links */
-    margin: 10px 0; /* margin around social links */
+    margin: 15px 0; /* margin around social links */
 }
 
 .sociallinks a {
