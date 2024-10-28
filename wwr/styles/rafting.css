@@ -166,14 +166,17 @@ textarea {
     box-sizing: border-box;
 }
 
-.newsletter {
-    padding: 2em;
-    background-color: #f4f4f4;
-}
-
 .call-to-action {
     text-align: center;
     margin: 2em 0;
+}
+
+.cta-button {
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    color: var(--hover-link-color);
 }
 
 .grid-layout {
@@ -194,7 +197,7 @@ textarea {
     height: auto;
 }
 
-button.submit-button {
+button.button {
     background-color: var(--primary-color); /* button color */
     color: var(--text-color-2);
     border: none; /* no border */
@@ -204,7 +207,7 @@ button.submit-button {
     margin-top: 10px; /* gap above button */
 }
 
-button.submit-button:hover {
+button.button:hover {
     background-color: var(--hover-link-color);
 }
 
@@ -218,13 +221,13 @@ footer {
 
 footer p {
     margin: 0; /* no margin for paragraphs */
-    align-self: center; /* center paragraph */
+    align-self: center;
     color: var(--text-color-2 );
 }
 
 .sociallinks {
     display: flex; /* maintain a flex layout for links */
-    justify-content: center; /* center social links */
+    justify-content: center;
     margin: 15px 0; /* margin around social links */
 }
 
