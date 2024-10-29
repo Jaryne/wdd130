@@ -56,28 +56,37 @@ body {
 }
 
 header {
-    display: grid; /* switched to grid because the module said so */
-    grid-template-columns: auto 1fr; /* Logo and navigation */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* add padding */
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo on the left, nav on the right */
+    align-items: center;
+    padding: 10px 20px; /*more compact look */
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Make sure it stays above other content */
 }
 
 header img {
-    max-width: 125px; 
+    max-width: 80px; /* Adjust logo size */
+    height: auto; /* Keep the logo's aspect ratio */
 }
 
 nav {
-    display: flex; /* flexbox for horizontal navigation */
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
 }
 
 nav a {
-    text-decoration: none; /* remove underline */
-    margin: 0 10px; /* spacing between links */
+    text-decoration: none;
+    margin: 0 15px; /* Space between links */
     color: var(--link-color);
+    font-weight: 500; /* Optional: make links slightly bolder */
+    transition: color 0.3s; /* Smooth hover effect */
 }
 
 nav a:hover {
-    color: var(--hover-link-color); /* link hover color */
+    color: var(--hover-link-color); /* Change on hover */
 }
 
 main {
